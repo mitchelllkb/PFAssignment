@@ -22,7 +22,7 @@ html,body
     display: flex;
     position: fixed;
     width: 100vw;
-    height: 6vh;
+    height: 5vh;
     padding: 0px 40px;
     z-index: 100;
     align-items: center;
@@ -31,10 +31,15 @@ html,body
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+#mainheading
+{
+    font-size: 1.5rem;
+}
+
 #linkhome
 {
     position: absolute;
-    top: 1vh;
+    top: 0.3vh;
     right: 5vw;
     width: 40px;
     height: 40px;
@@ -76,7 +81,7 @@ html,body
     width: 100%;
     height: 100vh;
     padding: 20px 20px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
@@ -90,7 +95,7 @@ html,body
     align-content: center;
     justify-content: center;
     color: white;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 #lbldescribe1,#lbldescribe2,#lbldescribe3,#lbldescribe4
@@ -98,7 +103,7 @@ html,body
     display: block;
     position: relative;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: rgb(180,132,148);
     background-color: rgba(0,0,0,0.1);
@@ -112,13 +117,13 @@ html,body
     padding: 10px;
     text-align: center;
     align-content: center;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     background-color: rgba(179,159,200,0.5);
 }
 
 #para1
 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-style: italic;
     color: rgb(0,54,26);
     margin: 20px 0px; 
@@ -130,7 +135,7 @@ html,body
 
 #btnoperator
 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 8vw;
     height: 3vh;
     border: none;
@@ -153,7 +158,7 @@ ul{
     background-color: rgba(191,217,233,0.2);
     box-shadow: 5px 2px 5px rgba(0,0,0,0.1);
     color: rgb(78,121,156);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     list-style-type: none;
 }
 .btnlogic
@@ -166,7 +171,7 @@ ul{
     background-color: rgba(191,217,233,0.2);
     box-shadow: 5px 2px 5px rgba(0,0,0,0.1);
     color: rgb(78,121,156);
-    font-size: 1rem;
+    font-size: 0.8rem;
     list-style-type: none;
 }
 .btnmethod
@@ -179,7 +184,7 @@ ul{
     background-color: rgba(191,217,233,0.2);
     box-shadow: 5px 2px 5px rgba(0,0,0,0.1);
     color: rgb(78,121,156);
-    font-size: 1rem;
+    font-size: 0.8rem;
     list-style-type: none;
 }
 
@@ -194,7 +199,7 @@ ul{
     width: 100%;
     height: 8vh;
     padding: 10px 5px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     background-color: rgb(0,54,26);
     color: white;
     white-space: pre-wrap;
