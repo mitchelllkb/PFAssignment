@@ -11,7 +11,7 @@ body
 {
     display: flex;
     position: relative;
-    background-image: url(images/ngeeAnnPoly00.jpg);
+    background-image: url(../images/ngeeAnnPoly00.jpg);
     background-position: center;
     background-size: cover;
     align-items: center;
