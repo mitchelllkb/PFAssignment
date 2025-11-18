@@ -11,7 +11,7 @@ body
 {
     display: flex;
     position: relative;
-    background-image: url(/Images/ngeeAnnPoly00.jpg);
+    background-image: url(images/ngeeAnnPoly00.jpg);
     background-position: center;
     background-size: cover;
     align-items: center;
@@ -56,7 +56,7 @@ body
     height: 100px;
     margin-top: 50px;
     left: 10%;
-/*    background-image: url(/Images/pexels-brett-sayles-1186851.jpg);
+/*    background-image: url(images/pexels-brett-sayles-1186851.jpg);
     background-size: cover;
     background-position: center;*/
 }
