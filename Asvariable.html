@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Asvariable.css">
+    <link rel="icon" href="/Images/jslogo100.svg">
+    <title>JavaScript - Understand Variables</title>
+</head>
+<body>
+    <div id="headcontainer">
+        <h1 id="mainheading">Understanding Variables</h1>
+        <a href="index.html"><img id="linkhome" src="/Images/link-svgrepo-com.svg" alt="Return to JavaScript Fundamentals Home Page"></a>
+    </div>
+    <div id="maincontainer">
+    <section class="pages" id="container1">
+        <h3 id="subheading1">1. Declaration</h3>
+        <h4 id="lbldescribe1">Click a button in how to declare a variable:</h4>
+        <div id="btncontainer">
+            <button id="showvar">var</button>
+            <button id="showlet">let</button>
+            <button id="showconst">const</button>
+            <button id="resetbtn">reset</button>
+        </div>
+    <div id="outputnote1"></div>    
+    <div id="output1"></div>
+    <div id="outputnote2"></div>
+    <div id="output2"></div>
+
+    <div id="lbldescribe1_1">
+        The rules and suggestion in JavaScript Naming Convention.
+    </div>
+    <table>
+    <caption><strong>Mandatory Rules for Variable Naming</strong></caption>
+    <thead>
+    <tr>
+      <th>Rule</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Start with a letter, _ or $</td>
+      <td>Variable names cannot begin with a number.</td>
+      <td><code>let _count = 5;</code></td>
+    </tr>
+    <tr>
+      <td>No spaces or special characters</td>
+      <td>Only letters, digits, underscores, and dollar signs are allowed.</td>
+      <td><code>let userName = "Alex";</code></td>
+    </tr>
+    <tr>
+      <td>Case-sensitive</td>
+      <td><code>score</code> and <code>Score</code> are different variables.</td>
+      <td><code>let score = 10;</code></td>
+    </tr>
+    <tr>
+      <td>No reserved keywords</td>
+      <td>Don't use JavaScript keywords like <code>let</code>, <code>class</code>, etc.</td>
+      <td><code>let className = "Math";</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <table>
+  <caption><strong>Suggested Practices for Variable Naming</strong></caption>
+  <thead>
+    <tr>
+      <th>Practice</th>
+      <th>Why It Helps</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Use camelCase</td>
+      <td>Improves readability and follows community conventions.</td>
+      <td><code>let totalAmount = 100;</code></td>
+    </tr>
+    <tr>
+      <td>Be descriptive</td>
+      <td>Helps others understand the variable’s purpose.</td>
+      <td><code>let userAge = 25;</code></td>
+    </tr>
+    <tr>
+      <td>Avoid single letters</td>
+      <td>Except in loops or temporary values.</td>
+      <td><code>for (let i = 0; i &lt; 10; i++)</code></td>
+    </tr>
+    <tr>
+      <td>Use <code>const</code> for constants</td>
+      <td>Signals that the value should not change.</td>
+      <td><code>const PI = 3.14159;</code></td>
+    </tr>
+  </tbody>
+</table>
+    </section>
+    <section class="pages" id="container2">
+        <h3 id="subheading2">2. Initialisation</h3>
+        <h4 id="lbldescribe2">To initialized a variable is basically to assign values to the variable declared </h4>
+        <div id="constinit0">Declaration by <span id="highlight2">let</span> is possible with or without initializing the variable.</div>
+        <div id="initdemo1"><span id="highlight1">let age;</span> //The variable is declared but not initialized</div>
+        <div id="initdemo2"><span id="highlight1">let age = 23;</span> //The variable is declared and initialized</div>
+        <div id="constinit1">It's syntax incorrect to declare <span id="highlight2">const</span> as a variable without initializing it.</div>
+        <div id="initdemo3"><span id="highlight0">const hotelName;</span> //It will result to SyntaxError: Missing initializer in const declaration.</div>
+        <div id="constinit2">The correct way to declare a <span id="highlight2">const</span> is as follow:</div>
+        <div id="initdemo4"><span id="highlight1">const hotelName = "Raffles Hotel";</span></div>
+        <h4 id="lbldescribe2_1">Variable Initialization by Function</h4>
+
+    <div class="tablefunction">
+        <div class="rowfunction">
+            <div class="cellfunction">Function returns a value</div>
+            <div class="cellfunction">Variable gets value from a function call.</div>
+            <div class="cellfunction"><code>let total = calculateSum();</code></div>
+        </div>
+        <div class="rowfunction">
+            <div class="cellfunction">Function expression</div>
+            <div class="cellfunction">Variable holds a function definition.</div>
+            <div class="cellfunction"><code>const greet = function(name) { return "Hi " + name; };</code></div>
+        </div>
+        <div class="rowfunction">
+            <div class="cellfunction">Arrow function</div>
+            <div class="cellfunction">Concise function assignment.</div>
+            <div class="cellfunction"><code>const double = x => x * 2;</code></div>
+        </div>
+    </div>
+    <h4 id="lbldescribe2_2">Variable Initialization by Object</h4>
+    <div class="tableobject">
+        <div class="rowobject">
+            <div class="cellobject">Object literal</div>
+            <div class="cellobject">Variable holds key-value pairs.</div>
+            <div class="cellobject"><code>const user = { name: "Alex", age: 30 };</code></div>
+        </div>
+        <div class="rowobject">
+            <div class="cellobject">Object from function</div>
+            <div class="cellobject">Function returns an object.</div>
+            <div class="cellobject"><code>let config = getSettings();</code></div>
+        </div>
+        <div class="rowobject">
+            <div class="cellobject">Object constructor</div>
+            <div class="cellobject">Using <code>new</code> to create an object.</div>
+            <div class="cellobject"><code>let date = new Date();</code></div>
+        </div>
+    </div>
+
+    </section>
+    <section class="pages" id="container3">
+        <h3 id="subheading3">3. Data Type</h3>
+        <h4 id="lbldescribe3">Primitive Types:</h4>
+<div id="primtypes">
+  <button class="databtn" data-type="Number">Number</button>
+  <button class="databtn" data-type="String">String</button>
+  <button class="databtn" data-type="Boolean">Boolean</button>
+  <button class="databtn" data-type="Undefined">Undefined</button>
+  <button class="databtn" data-type="Null">Null</button>
+  <button class="databtn" data-type="BigInt">BigInt</button>
+  <button class="databtn" data-type="Symbol">Symbol</button>
+</div>
+
+<h4 id="lbldescribe4">Reference Types:</h4>
+<div id="reftypes">
+  <button class="databtn" data-type="Object">Object</button>
+  <button class="databtn" data-type="Array">Array</button>
+  <button class="databtn" data-type="Function">Function</button>
+</div>
+
+<div id="sampledata"></div>
+
+<input type="text" id="userInput" placeholder="Enter a value:">
+<div id="datatype"></div>
+<button id="checktype">Check</button>
+
+    </section>
+    <section class="pages" id="container4">
+        <h3 id="subheading4">4. Hoisting</h3>
+        <h4 id="lbldescribe5"><span id="hoist">Hoisting</span> is a JavaScript behaviour where declarations are moved to the top of their scope (Global or Function) during the compilation phased, before execution.</h4>
+        <div id="varhoist">Hoisting occurs while compiling. If a variable is declared by <span id="highlight2">var</span> and due to its "loose" nature, the value will be read and sent through the function.</div>
+        <div id="varhoistdemo0"><span id="highlight0">var age = 23;</span> // The variable age is declared and assigned with a value of 23.<br><span id="highlight0">function getAge()<br>{console.log(age)};<br>getAge();</span> //It will return an output as 23 </div>
+        <div id="lethoist">If a variable is declared by <span id="highlight2">let</span> or <span id="highlight2">const</span>, it will lock itself in Temporal Dead Zone (TDZ) which prevents the function from reading its value.</div>
+        <div id="varhoistdemo1"><span id="highlight1">let age = 23;</span> // The variable age is declared and assigned with a value of 23.<br><span id="highlight1">function getAge()<br>{console.log(age)};<br>getAge();</span> //The return output will indicate as a ReferenceError. </div>
+    </section>
+    </div>
+    <script src="/js/Asvariable.js"></script>
+</body>
+</html>
