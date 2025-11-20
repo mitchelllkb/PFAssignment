@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/Asapiaccess.css">
+  <link rel="icon" href="images/jslogo100.svg">
+  <title>JavaScript - Public API Access Data</title>
+</head>
+<body>
+  <!-- Landing page container (optional intro screen) -->
+  <div id="landingpage" class="hidden"></div>
+
+  <div id="headcontainer">
+    <h1 id="mainheading">API Access</h1>
+    <label for="countrySelect">Choose a country:</label>
+    <select id="countrySelect">
+      <option value="Singapore" selected>Singapore</option>
+      <option value="South Korea">South Korea</option>
+      <option value="Japan">Japan</option>
+      <option value="Italy">Italy</option>
+      <option value="United States">United States</option>
+      <option value="China">China</option>
+      <option value="India">India</option>
+      <option value="Germany">Germany</option>
+      <option value="France">France</option>
+      <option value="Brazil">Brazil</option>
+      <option value="Australia">Australia</option>
+      <option value="South Africa">South Africa</option>
+      <option value="Vietnam">Vietnam</option>
+    </select>
+    <button id="applybtn">Travel</button>
+    <a href="index.html">
+      <img id="linkhome" src="images/link-svgrepo-com.svg" alt="Return to Home">
+    </a>
+  </div>
+
+  <div id="maincontainer" class="hidden">
+    <section id="container1">
+      <div id="countryflagcontainer" class="hidden"></div>
+      <div id="countrystatcontainer" class="hidden"></div>
+      <div id="weatherappcontainer" class="hidden"></div>
+    </section>
+
+    <section id="container2">
+      <div id="mapcontainer" class="hidden"></div>
+      <div id="countrynamecontainer" class="hidden"></div>
+    </section>
+  </div>
+
+  <script src="js/Asapiaccess.js"></script>
+</body>
+</html>

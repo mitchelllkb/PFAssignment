@@ -1,0 +1,96 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5vh;
+    background-image: url(../images/singapore.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#headcontainer
+{
+    display: flex;              /* enable flexbox */
+    position: fixed;
+    width: 100vw;
+    height: 5vh;
+    top: 0px;
+    padding: 0px 40px;
+    z-index: 100;
+    align-items: center;        /* vertical centering */
+    justify-content: space-between; /* spread items */
+    background-color: lightblue;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#headcontainer h1 {
+    margin-right: auto; /* push heading to the left */
+}
+
+#mainheading
+{
+    font-size: 1.5rem;
+}
+
+#headcontainer label,
+#headcontainer select,
+#applybtn,
+#linkhome 
+{
+    position: static; /* let flexbox handle placement */
+    margin-left: 3vw;
+    font-size: 0.8rem;   
+}
+
+#applybtn
+{
+    font-size: 0.8rem;
+    height: 3vh;
+    width: 6vw;
+    border: none;
+    background: rgba(191,217,233,1);
+    box-shadow: 2px 1px 1px rgba(191,217,233,1), -2px -1px 1px white;
+}
+
+#applybtn:hover
+{
+    cursor: pointer;
+    box-shadow: 2px 1px 2px rgba(170,200,202,0.8) inset, -2px -1px 1px white inset;
+}
+
+#linkhome
+{
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+}
+
+#maincontainer 
+{
+  padding-top: 5vh; /* push grid content down */
+  min-height: 95vh; /* fill remaining viewport */
+}
+
+#countryflagcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px; /* or any fixed size you want */
+}
+
+#countryflagcontainer img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}

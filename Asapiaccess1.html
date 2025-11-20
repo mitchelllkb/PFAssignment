@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/Asapiaccess.css">
+  <link rel="icon" href="images/jslogo100.svg">
+  <title>JavaScript - Public API Access Data</title>
+</head>
+<body>
+  <div id="headcontainer">
+    <h1 id="mainheading">API Access</h1>
+    <label for="countrySelect">Choose a country:</label>
+    <select id="countrySelect">
+      <option value="Singapore">Singapore</option>
+      <option value="Japan">Japan</option>
+      <option value="United States">United States</option>
+      <option value="China">China</option>
+      <option value="India">India</option>
+      <option value="Germany">Germany</option>
+      <option value="France">France</option>
+      <option value="Brazil">Brazil</option>
+      <option value="Australia">Australia</option>
+      <option value="South Africa">South Africa</option>
+    </select>
+    <button id="applybtn">Travel</button>
+    <a href="index.html">
+      <img id="linkhome" src="images/link-svgrepo-com.svg" alt="Return to JavaScript Fundamentals Home Page">
+    </a>
+  </div>
+  <div id="maincontainer">
+    <div class="grid-container">
+      <!-- Column 1: Flag -->
+      <div id="countryflagcontainer" class="grid-item"></div>
+
+      <!-- Column 2: Stats -->
+      <div id="countrystatcontainer" class="grid-item"></div>
+
+      <!-- Column 3: Weather -->
+      <div id="weatherappcontainer" class="grid-item">
+        <div class="weatherinfo">
+          <h3>Weather</h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/Asapiaccess.js"></script>
+</body>
+</html>
