@@ -3,36 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/As1.css">
+    <link rel="stylesheet" href="css/Asapiaccess.css">
     <link rel="icon" href="images/jslogo100.svg">
-    <title>The Road to Full Stack Development - Javascript</title>
+    <title>Javascript - API Access</title>
 </head>
 <body>
+    <div id="headcontainer">
+    <h1 id="mainheading">API Access</h1>
+    <label for="countrySelect">Choose a country:</label>
+    <select id="countrySelect">
+      <option value="Singapore" selected>Singapore</option>
+      <option value="Australia">Australia</option>
+      <option value="Brazil">Brazil</option>
+      <option value="China">China</option>
+      <option value="Egypt">Egypt</option>
+      <option value="France">France</option>
+      <option value="Germany">Germany</option>
+      <option value="Iceland">Iceland</option>
+      <option value="India">India</option>
+      <option value="Indonesia">Indonesia</option>
+      <option value="Italy">Italy</option>
+      <option value="Japan">Japan</option>
+      <option value="New Zealand">New Zealand</option>
+      <option value="South Korea">South Korea</option>
+      <option value="Thailand">Thailand</option>
+      <option value="South Africa">South Africa</option>
+      <option value="Switzerland">Switzerland</option>
+      <option value="Vietnam">Vietnam</option>      
+      <option value="United States">United States</option>
+    </select>
+    <button id="applybtn">Travel</button>
+    <a href="index.html">
+      <img id="linkhome" src="images/link-svgrepo-com.svg" alt="Return to Home">
+    </a>
+  </div>
+
+  <div id="maincontainer">
     <div id="container1">
-        <h1 id="maintag">Full Stack Development</h1>
-        <div id="clockcontainer">
-            <h2 id="digiclock"></h2>
-        </div>    
-        <div id="paragraphcontainer"></div>
+        <div id="countryflagcontainer" class="hidden">
+
+        </div>
+        <div id="countrystatcontainer" class="hidden">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div id="weatherappcontainer" class="hidden">
+            <h3></h3>
+            <p></p>
+        </div>
+
     </div>
     <div id="container2">
-        <h3 id="subtag">Programming Fundamentals</h3>
-        <ul>
-            <li class="subjects"><a href="Asvariable.html">Understand Variables</a></li>
-            <li class="subjects"><a href="Asarithmetic.html">Arithmetic Operations</a></li>
-            <li class="subjects"><a href="#">Logical Expressions</a></li>
-            <li class="subjects"><a href="#">Arrays and Objects</a></li>
-            <li class="subjects"><a href="#">Functions</a></li>
-            <li class="subjects"><a href="Asapiaccess.html">API access</a></li>
-        </ul>
-        <div id="logocontainer">
-        <img id=html5logo src="images/html5_00.jpg" alt="pics of HTML5 logo">
-        <img id=csslogo src="images/css_logo.png" alt="pics of CSS logo">
-        <img id=jslogo src="images/jslogoflat.png" alt="pics of JavaScript logo">
-        <img src="images/json-icon.svg" alt="" id="jsonlogo" alt="pics of JSON logo">
-        <img src="images/github00.png" alt="" id="githublogo" alt="pics of Github logo">
+        <div id="mapcontainer" class="hidden"></div>
+        <div id="countrynamecontainer" class="hidden">
+            <h1></h1>
+            <br>
+            <p id="countryabt" class="hidden"></p>
         </div>
     </div>
-    <script src="js/As1.js"></script>
+  </div>
+
+  <script src="js/Asapiaccess.js"></script>
 </body>
 </html>
