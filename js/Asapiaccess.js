@@ -154,13 +154,13 @@ function loadCountryData(country) {
       const currencyText = currencies ? `${currencies.name}${currencies.symbol ? ` (${currencies.symbol})` : ""}` : "N/A";
 
       statsContainer.innerHTML = `
-        <h3>${name}</h3>
+        <h3><span>${name}</span></h3>
         <br>
-        <p><strong>Capital:</strong> ${capital}</p>
-        <p><strong>Population:</strong> ${population}</p>
-        <p><strong>Area:</strong> ${area} km²</p>
-        <p><strong>Region:</strong> ${region}</p>
-        <p><strong>Currency:</strong> ${currencyText}</p>
+        <p><span>Capital:</span> ${capital}</p>
+        <p><span>Population:</span> ${population}</p>
+        <p><span>Area:</span> ${area} km²</p>
+        <p><span>Region:</span> ${region}</p>
+        <p><span>Currency:</span> ${currencyText}</p>
       `;
       statsContainer.classList.remove("hidden");
 
@@ -211,12 +211,12 @@ function loadCountryData(country) {
 
         weatherContainer.innerHTML = `
           <div class="weatherinfo">
-            <h3>Current Weather</h3>
+            <h3><span>Current Weather</span></h3>
             <p>${typeof temp === "number" ? `${temp} °C` : "N/A"}, ${desc}</p>
           </div>
           <br>
           <div class="weatherinfo">
-            <h3>Local Time</h3>
+            <h3><span>Local Time</span></h3>
             <p id="localtime"></p>
           </div>
         `;
