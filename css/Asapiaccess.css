@@ -343,7 +343,7 @@ body
     justify-content: center;
     align-items: center;
     width: 95%;
-    height: 44%;
+    height: 45%;
 }
 
 #countryflagcontainer
@@ -426,7 +426,7 @@ body
     display: flex;
     position: relative;
     width: 95%;
-    height: 44%;
+    height: 45%;
     justify-content: space-between;
     align-items: center; 
 }
@@ -465,7 +465,7 @@ body
 {
   position: relative;
   width: 100%;
-  height: 75%;
+  height: 70%;
   padding: 10px;
   font-size: var(--parafontsize);
   font-weight: 300;
@@ -473,5 +473,4 @@ body
   background-color: var(--bglayer);
   border-radius: 30px;
   align-content: center;
->>>>>>> 21c6fa5 (Submit readme.md file, make adjustment to name of files and new images related to readme.md.)
 }
