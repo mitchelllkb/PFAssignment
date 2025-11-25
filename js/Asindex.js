@@ -1,3 +1,5 @@
+/* A Simple Digital Clock */
+
 function updateClock() {
   const now = new Date();
   const timeString = now.toLocaleTimeString('en-SG', {

@@ -48,7 +48,7 @@ To create a resource that is both a personal learning artifact and a guide for o
 # Foundation Structure #
 
 ![Structure Overview](images/PFAssignment.png)
-📎 [Download the editable PowerPoint version](PFAssignment.pptx)
+[Download the editable PowerPoint version](PFAssignment.pptx)
 
 
 This project, **A Learning Journey – Full Stack Development**, is organized into modular topic pages linked from a central hub (`index.html`). Each navigation item in `index.html` links to a dedicated topic page, which loads its own CSS and JavaScript files from the `/css/` and `/js/` folders, maintaining a clear separation of concerns.
