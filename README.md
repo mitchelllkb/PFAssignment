@@ -248,6 +248,6 @@ The project is hosted via GitHub Pages.
 - **Media:** Icons and images sourced from free repositories (e.g., GitHub assets, royalty‑free sources).  
 - **Acknowledgements:**  
   - Inspired by Code Institute’s README template and guided by diploma coursework requirements.  
-  - Background information adapted from Wikipedia (with attribution), specifically the introductory paragraphs for each country.  
+  - Background information adapted from Wikipedia (https://www.wikipedia.org/) (with attribution), specifically the introductory paragraphs for each country.  
   - API endpoints accessed via REST Countries API(https://restcountries.com/) and Open‑Meteo (https://open-meteo).  
   - Country maps accessed via Google Maps API(https://www.google.com/maps).
