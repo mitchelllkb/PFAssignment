@@ -53,7 +53,7 @@ To create a resource that is both a personal learning artifact and a guide for o
 
 This project, **A Learning Journey – Full Stack Development**, is organized into modular topic pages linked from a central hub (`index.html`). Each navigation item in `index.html` links to a dedicated topic page, which loads its own CSS and JavaScript files from the `/css/` and `/js/` folders, maintaining a clear separation of concerns.
 
-All HTML pages include a consistent fixed header featuring a navigation link with the ID `linkhome`, represented by an icon, which hyperlinks back to the `index.html` hub. This structure diagram illustrates how the site is organized, demonstrating how each component contributes to a clear, maintainable, and educationally sound learning experience.
+All HTML pages include a consistent fixed header featuring a navigation link with the ID `linkhome`, represented by an icon, which hyperlinks back to the `index.html` hub. This structure diagram illustrates how the site is organized, demonstrating how each component contributes to a clear, maintainable, and pedagogically sound learning experience.
 
 ## User Experience/ User Interface ##
 
