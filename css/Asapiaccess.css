@@ -65,9 +65,8 @@ label
 #applybtn
 {
   font-size: var(--parafontsize);
-  padding: 10px;
   height: 3vh;
-  width: 7vw;
+  width: 9vw;
   text-align: center;
   align-content: center;
   border-radius: 20px;
