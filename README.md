@@ -14,7 +14,7 @@ The vision is to **galvanize learning through practice** — showing not only th
 ## Chapters (Learning Guide Structure) ##
 **HTML/CSS Foundations**  
    - Semantic structure, accessibility, and layout basics.  
-   - Structural diagram included (Visio org chart).  
+   - Structural diagram included (Powerpoint org chart).  
    - Typography, color schemes, and adaptive layouts.  
    - Focus on user experience and inclusion.
    - Accessibility features, including semantic tags and descriptive alt text, are consistently applied.  
@@ -83,7 +83,7 @@ This project is designed for learners beginning their journey in full stack deve
 - Background image toggle with option to hide containers.
 - Search functionality across topic modules.
 - Expanded API examples (multiple endpoints).
-
+- Improves user interface with a better and flexible navigation to access to each pages.
 
 ## Technologies Used ##
 - HTML5 – semantic structure and accessibility.
