@@ -181,7 +181,6 @@ mapContainer.innerHTML = `
           src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBHGnK_mPb1_SPTNQMDVkT0m0xxvHwe63w&center=${lat},${lon}&zoom=${zoom}&maptype=satellite">
         </iframe>
       `;
-      mapContainer.classList.remove("hidden");
 ```
 - → Open-Meteo API for weather forecasts.
 
