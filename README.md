@@ -240,7 +240,7 @@ The project is hosted via GitHub Pages.
 - Deployment steps:  
   1. Push to `main` branch.  
   2. Enable GitHub Pages in repository settings.  
-  3. Access via published URL: `https://mitchelllkb.github.io/PFAssignment/`
+  3. Access via published URL: `(https://mitchelllkb.github.io/PFAssignment/)`
 
 ## Credits ##
 - **Content:** All text and examples authored by me. References include MDN Web Docs, W3Schools.com, and course materials.  
