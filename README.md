@@ -70,7 +70,7 @@ This project is designed for learners beginning their journey in full stack deve
 
 - **Design artifacts:** The structure diagram in PowerPoint illustrates navigation flow and file dependencies.
 
-## Features ##
+## Features
 ** Existing Features **
 - Index hub: Central navigation to all topic modules.
 - Fixed header: Consistent across all pages, with `linkhome` icon returning to `index.html`.
@@ -85,7 +85,7 @@ This project is designed for learners beginning their journey in full stack deve
 - Expanded API examples (multiple endpoints).
 - Improve the user interface with more flexible navigation between pages.”
 
-## Technologies Used ##
+## Technologies Used
 - HTML5 – semantic structure and accessibility.
 - CSS3 – responsive layouts, typography, and styling.
 - JavaScript (ES6) – interactivity, DOM manipulation, and API integration.
@@ -93,7 +93,7 @@ This project is designed for learners beginning their journey in full stack deve
 - GitHub Pages – hosting the project online.
 - PowerPoint – diagramming and documentation.
 
-# API Access - A simple project ##
+# API Access - A simple project
 
 ## Introduction
 
@@ -221,7 +221,7 @@ In our example, we are using chaining method to reuse variables extracted from a
 - Benefit: We can reuse data therefore having shorter codes or duplicated declarations.
 - Risk: However, the risk of it is that if an API fails, where it doesn't return those required data, the downstream API will malfunction as well.
 
-## Testing ##
+## Testing
 Manual testing was conducted to ensure all user stories are met:
 - Navigation links from `index.html` correctly load topic pages.
 - Pages will be inaccessible if Under‑Construction and remain inactive.
@@ -234,7 +234,7 @@ Manual testing was conducted to ensure all user stories are met:
 - No critical issues observed; minor layout differences may occur on very small screens.
 - API fetch availability depends on external site uptime, though appropriate error‑handling is in place.
 
-## Deployment ##
+## Deployment
 The project is hosted via GitHub Pages.
 - Local development: open `index.html` in a browser.
 - Deployment steps:  
@@ -242,7 +242,7 @@ The project is hosted via GitHub Pages.
   2. Enable GitHub Pages in repository settings.  
   3. Access via published URL: (https://mitchelllkb.github.io/PFAssignment/)
 
-## Credits ##
+## Credits
 - **Content:** All text and examples authored by me. References include MDN Web Docs, W3Schools.com, and course materials.  
 - **Media:** Icons and images sourced from free repositories (e.g., GitHub assets, royalty‑free sources).  
 - **Acknowledgements:**  
