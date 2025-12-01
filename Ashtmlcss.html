@@ -14,7 +14,7 @@
     </div>
     <div id="maincontainer">
     <section class="pages" id="container1">
-        <h3 id="subheading1">1. Overview</h3>
+        <h3 id="subheading1">1. Hyper Text Markup Language (HTML)</h3>
         <h4 id="lbldescribe1">HTML: Hyper Text Markup Language</h4>
         <p id="htmlpara">
             HTML is a markup language used to structure the content of a webpage. HTML defines the structure of a webpage, which is referred to as a <span>Document</span>. An HTML document must begin with the following declaration:<br> 
@@ -30,12 +30,26 @@
             Semantic tags clearly define their purpose and the type of content they contain. They enhance recognition by search engines and improve accessibility for screen readers.<br> 
             <span>Non-Semantic: &lt;div&gt;, &lt;span&gt;</span>
             Non‑semantic tags are generic containers with no inherent meaning. Their purpose is defined only by the developer through attributes, classes, or styling.
-
         </p>
+        <h4 id="lbldescribe1">Link to external working files</h4>
+        <p>Within the &lthead&gt&lt/head&gt tags, this is where link to external files are declared.</p><br>
+        <p><span><code>&ltlink rel="stylesheet" href="css/style.css"&gt</code></span> // This is to declare to link this html file to its styling file in css folder named style.css</p>
+        <p><span><code>&ltlink rel="icon" href="images/icon.png"&gt</code></span> // This is to declare to set the tiny icon to be displayed at the tab of the browser.</p>
+        <p><span><code>&ltscript src="js/abc.js"&gt&lt/script&gt</code></span> // The javaScript script file can be placed here as well where the file abc.js is referenced from the folder js</p>
+        <h4 id="lbldescribe1">Selectors</h4>
+        <p><span>Selectors</span> are patterns used in CSS (and referenced in JavaScript) to target specific HTML elements. They allow styles or behaviors to be applied based on the element’s type, attributes, or relationships. With <span><code>&lt;html&gt;...&lt;/html&gt;</code></span>, HTML provides the structure by:</p>
 
+<p><span>Tag (Type) - &lt;p&gt;, &lt;section&gt;, &lt;h1&gt;</span>  
+// Standard HTML tags. CSS type selectors apply styles to all elements of that tag.</p>
+
+<p><span>Class - &lt;div class="navbtn"&gt;</span>  
+// Elements with class="navbtn" can be styled using `.navbtn { ... }`. Classes can be shared across multiple elements.</p>
+
+<p><span>ID - &lt;div id="navbtn1"&gt;</span>  
+// The element with id="navbtn1" can be styled using `#navbtn1 { ... }`. IDs must be unique within the page.</p>
     </section>
     <section class="pages" id="container2">   
-        <div id="lbldescribe1_1">
+        <div id="lbldescribe2">
         CSS - Cascading Style Sheets
         </div>
     </section>     
