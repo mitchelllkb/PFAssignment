@@ -184,7 +184,7 @@ ul li
     list-style-type: none;
     justify-content: center;
     align-items: center;
-    background-color: rgb(209,204,155);
+    background-color: rgba(209,204,155,0.2);
     box-shadow: rgba(255,255,2,1) inset, rgba(209,204,155,0.5) inset;
     list-style-type: none;
     font-size: 2em; 
@@ -198,7 +198,7 @@ ul li
     list-style-type: none;
     justify-content: center;
     align-items: center;
-    background-color: rgb(209,204,155);
+    background-color: rgba(209,204,155,0.2);
     box-shadow: rgba(255,255,2,1) inset, rgba(209,204,155,0.5) inset;
     list-style-type: none;
     font-size: 1.5em;
@@ -212,7 +212,7 @@ ul li
     list-style-type: none;
     justify-content: center;
     align-items: center;
-    background-color: rgb(209,204,155);
+    background-color: rgba(209,204,155,0.2);
     box-shadow: rgba(255,255,2,1) inset, rgba(209,204,155,0.5) inset;
     list-style-type: none;
     font-size: 1.17em;
@@ -226,7 +226,7 @@ ul li
     list-style-type: none;
     justify-content: center;
     align-items: center;
-    background-color: rgb(209,204,155);
+    background-color: rgba(209,204,155,0.2);
     box-shadow: rgba(255,255,2,1) inset, rgba(209,204,155,0.5) inset;
     list-style-type: none;
     font-size: 1em;
@@ -240,7 +240,7 @@ ul li
     list-style-type: none;
     justify-content: center;
     align-items: center;
-    background-color: rgb(209,204,155);
+    background-color: rgba(209,204,155,0.2);
     box-shadow: rgba(255,255,2,1) inset, rgba(209,204,155,0.5) inset;
     list-style-type: none;
     font-size: 0.83em;
@@ -254,7 +254,7 @@ ul li
     list-style-type: none;
     justify-content: center;
     align-items: center;
-    background-color: rgb(209,204,155);
+    background-color: rgba(209,204,155,0.2);
     box-shadow: rgba(255,255,2,1) inset, rgba(209,204,155,0.5) inset;
     list-style-type: none;
     font-size: 0.67em;
