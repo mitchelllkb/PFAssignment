@@ -178,31 +178,37 @@ ul li
 
 .h1style 
 {   
+    list-style-type: none;
     font-size: 2em; 
     font-weight: bold; 
 }
 .h2style
 {
+    list-style-type: none;
     font-size: 1.5em;
     font-weight: bold;
 }
 .h3style
 {
+    list-style-type: none;
     font-size: 1.17em;
     font-weight: bold;
 }
 .h4style
 {
+    list-style-type: none;
     font-size: 1em;
     font-weight: bold; 
 }
 .h5style
 {   
+    list-style-type: none;
     font-size: 0.83em;
     font-weight: bold;
 }
 .h6style
-{ 
+{   
+    list-style-type: none;
     font-size: 0.67em;
     font-weight: bold;
 }
