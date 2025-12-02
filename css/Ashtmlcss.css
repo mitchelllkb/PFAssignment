@@ -158,6 +158,7 @@ ul li
     height: 3vh;
     list-style-type: none;
     justify-content: center;
+    font-weight: bold;
     align-items: center;
     background-color: rgb(209,204,155);
     box-shadow: rgba(255,255,2,1) inset, rgba(209,204,155,0.5) inset;
