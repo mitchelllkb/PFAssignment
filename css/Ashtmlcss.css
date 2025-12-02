@@ -180,7 +180,7 @@ ul li
     cursor: pointer;
 }
 
-#lblh
+#lblh, .hlbls
 {
     align-content: center;
     text-align: center;
@@ -193,7 +193,6 @@ ul li
     background-color: rgba(209,204,155,0.2);
     box-shadow: rgba(255,255,2,1) inset, rgba(209,204,155,0.5) inset;
     list-style-type: none;
-    font-size: 2em; 
     font-weight: bold; 
 }
 

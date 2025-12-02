@@ -16,7 +16,10 @@ hbutton.forEach(button=>
 {
     button.addEventListener("click",() =>
     {
-        hlabel.className = ""; // reset classes
+        hlabel.textContent = ""; // reset classes
+        hlabel.style.fontSize = "initial";   // reset to default
+        hlabel.style.fontWeight = "initial"; // reset to default
+
         const hsize = button.textContent; // button content "h1"..."h6"
         const fsize = sizes[hsize]; //get size from object "sizes"
 
@@ -36,14 +39,11 @@ cbutton.addEventListener("click",() =>
 
     Object.keys(sizes).forEach(tag => {
         const hlbls = document.createElement(tag);
-        hlbls.textContent = tag;
-
         hlbls.textContent = tag; // just show the tag name
         hlbls.style.display = "inline-block"; // keep them in a row
         hlbls.style.marginRight = "12px";     // spacing between hlblss
         hlabel.appendChild(hlbls);
     }
     )
-
 })
 })
