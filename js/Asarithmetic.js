@@ -152,7 +152,7 @@ function handleInput(val) {
       // If user starts with a digit, decide:
       // Option A: continue from result (append)
       display.textContent = current + val;
-      // Option B: start fresh (replace) — only if you want calculator to behave like a handheld
+      // Option B: start fresh (replace) 
       // display.textContent = val;
     }
     justEvaluated = false;
