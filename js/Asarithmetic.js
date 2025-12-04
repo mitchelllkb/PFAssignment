@@ -34,3 +34,149 @@ document.querySelectorAll('.btnmethod').forEach(btn => {
     document.getElementById('btnmethodoutput').textContent = explanations[btn.textContent];
   });
 });
+
+const rButtons = document.querySelectorAll(".rowbtn");
+const acButton = document.getElementById("acbtn");
+const lblDisplay = document.getElementById("display");
+const lblDisplayResult = document.getElementById("displayresult");
+const backButton = document.getElementById("backbtn");
+const eqButton = document.getElementById("eqbtn");
+
+let lastResult = null;
+let justEvaluated = false;
+
+// Standard operators
+const operators = ["+", "-", "*", "/", "%"];
+// Special expressions (multi-character or function-like)
+const specialOperators = ["**", "√"];
+
+function clearAll() {
+  lblDisplay.textContent = "";
+  lblDisplayResult.textContent = "";
+  lastResult = null;
+  justEvaluated = false;
+}
+acButton.addEventListener("click", clearAll); //call to clear all screen when AC button clicked
+backButton.addEventListener("click", revertLast); //call to backspace once when <- button clicked
+eqButton.addEventListener("click",calcExpression); //call to run calcExpression() when clicked.
+
+function revertLast()
+{
+  let exprShow = lblDisplay.textContent;
+  lblDisplay.textContent = exprShow.slice(0, -1);
+}
+
+function appendExponent(base, exp) {
+  const display = document.getElementById("display");
+
+  // Clear if just evaluated
+  if (justEvaluated) {
+    display.textContent = "";
+    justEvaluated = false;
+  }
+
+  // Create a span for the base
+  const baseNode = document.createTextNode(base);
+
+  // Create a <sup> element for the exponent
+  const supNode = document.createElement("sup");
+  supNode.textContent = exp;
+
+  // Append both to the display
+  display.appendChild(baseNode);
+  display.appendChild(supNode);
+}
+
+
+
+function calcExpression() {
+  let exprShow = lblDisplay.textContent.trim();
+
+  // --- Handle square root cases ---
+  exprShow = exprShow.replace(/(\d+(?:\.\d+)?)√(\d+)/g, "($1*Math.sqrt($2))");
+  exprShow = exprShow.replace(/√(\d+)/g, "Math.sqrt($1)");
+  exprShow = exprShow.replace(/√\(([^)]+)\)/g, "Math.sqrt($1)");
+
+  // Percentage: number% → (number/100)
+  // Only match when % is NOT followed by another digit
+  exprShow = exprShow.replace(/(\d+(?:\.\d+)?)%(?!\d)/g, "($1/100)");
+
+  // Guard: empty or ends with operator (AFTER replacements)
+  if (!exprShow || /[+\-*/%]$/.test(exprShow)) {
+    lblDisplayResult.textContent = "Error: incomplete expression";
+    return;
+  }
+
+  try {
+    const result = Function(`"use strict"; return (${exprShow})`)();
+
+    // Store result for chaining
+    lastResult = result;
+    justEvaluated = true;
+
+    // Show result in BOTH labels
+    lblDisplay.textContent = String(result);
+    lblDisplayResult.textContent = String(result);
+  } catch (e) {
+    lblDisplayResult.textContent = "Error: invalid expression";
+  }
+}
+
+rButtons.forEach(item => {
+  item.addEventListener("click", () => {
+    const value = item.dataset.value; // grab the data-value
+    handleInput(value);
+  });
+
+  // Optional: keyboard accessibility
+  item.addEventListener("keydown", e => {
+    if (e.key === "Enter" || e.key === " ") {
+      handleInput(item.dataset.value);
+    }
+  });
+});
+
+function handleInput(val) {
+  const display = document.getElementById("display");
+  const current = display.textContent;
+
+  // If just evaluated, continue cleanly from the last result
+  if (justEvaluated) {
+    if (operators.includes(val) || specialOperators.includes(val)) {
+      // Continue from last result
+      display.textContent = current + val;
+    } else {
+      // If user starts with a digit, decide:
+      // Option A: continue from result (append)
+      display.textContent = current + val;
+      // Option B: start fresh (replace) — only if you want calculator to behave like a handheld
+      // display.textContent = val;
+    }
+    justEvaluated = false;
+    return;
+  }
+
+  // Prevent consecutive operators unless it's a valid special case
+  if (operators.includes(val) && operators.includes(current.slice(-1))) {
+    document.getElementById("displayresult").textContent = "Error: consecutive operators";
+    return;
+  }
+
+  // Handle special expressions
+  if (val === "√") {
+    display.textContent += "√";
+    return;
+  }
+
+  if (val === "**") {
+    if (operators.includes(current.slice(-1))) {
+      document.getElementById("displayresult").textContent = "Error: invalid exponent placement";
+      return;
+    }
+    display.textContent += "**";
+    return;
+  }
+
+  // Default case
+  display.textContent += val;
+}
