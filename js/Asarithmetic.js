@@ -159,6 +159,31 @@ function handleInput(val) {
     return;
   }
 
+  // --- Leading zero guard ---
+  const lastChar = current.slice(-1);
+  const isDigit = /^[0-9]$/.test(val);
+
+  // Case: starting fresh with "0"
+  if (current === "0" && isDigit) {
+    // Replace the 0 with the new digit
+    display.textContent = val;
+    return;
+  }
+
+  // Case: prevent multiple zeros like "00"
+  if (lastChar === "0" && isDigit && /(^|[+\-*/%√])0$/.test(current)) {
+    display.textContent = current.slice(0, -1) + val;
+    return;
+  }
+
+  // Case: allow "0." for decimals
+  if (lastChar === "0" && val === ".") {
+    display.textContent = current + ".";
+    return;
+  }
+
+
+
   // Prevent consecutive operators unless it's a valid special case
   if (operators.includes(val) && operators.includes(current.slice(-1))) {
     document.getElementById("displayresult").textContent = "Error: consecutive operators";
