@@ -303,13 +303,13 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3vw;
-    width: 3vw;
+    height: 4vw;
+    width: 4vw;
     font-size: 1.4rem;
     text-shadow: 5px 3px 5px rgb(78,121,196);
     color: rgb(226,227,244);
     margin: 5px;
-    border-radius: 20%;
+    border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
     background-color: rgb(28,111,136);
     box-shadow: 5px 3px 5px rgba(0,0,0,0.1), -3px -1px 5px white;
     list-style-type: none;
