@@ -107,7 +107,7 @@ html,body
     width: 100%;
     font-size: 0.8rem;
     font-weight: 600;
-    color: rgb(180,132,148);
+    color: rgb(220,152,188);
     background-color: rgba(0,0,0,0.1);
     margin: 10px 0px;
     padding: 10px 20px;
@@ -270,11 +270,11 @@ ul{
 {
     display: flex;
     justify-content: flex-end;
-    width:100%;
+    width:80%;
     height: 8vh;
     padding: 0 10px;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: rgb(246,247,244);
     box-shadow: 3px 1px 5px rgba(0,0,0,0.1), -3px -1px 3px rgb(78,121,156);
 }

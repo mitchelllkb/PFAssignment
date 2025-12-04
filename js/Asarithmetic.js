@@ -93,8 +93,11 @@ function calcExpression() {
   let exprShow = lblDisplay.textContent.trim();
 
   // --- Handle square root cases ---
-  exprShow = exprShow.replace(/(\d+(?:\.\d+)?)√(\d+)/g, "($1*Math.sqrt($2))");
-  exprShow = exprShow.replace(/√(\d+)/g, "Math.sqrt($1)");
+  // Case: number before √decimal → (number * Math.sqrt(decimal))
+  exprShow = exprShow.replace(/(\d+(?:\.\d+)?)√(\d+(?:\.\d+)?)/g, "($1*Math.sqrt($2))");
+  // Case: √decimal → Math.sqrt(decimal)
+  exprShow = exprShow.replace(/√(\d+(?:\.\d+)?)/g, "Math.sqrt($1)");
+  // Case: √(expression) → Math.sqrt(expression)
   exprShow = exprShow.replace(/√\(([^)]+)\)/g, "Math.sqrt($1)");
 
   // Percentage: number% → (number/100)
