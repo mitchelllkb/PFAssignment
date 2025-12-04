@@ -4,7 +4,7 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
 }
 
 html,body
@@ -213,8 +213,8 @@ ul{
     display: flex;
     position: absolute;
     flex: 0 0 50%;
-    margin-top: 10vh;
-    width: 100%;
+    margin-top: 12vh;
+    width: 90%;
     height: 80vh;
     z-index: 1;
     justify-content: space-between;
@@ -226,21 +226,22 @@ ul{
     display: flex;
     flex: 0 0 50%;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     width: 48%;
-    height: 100%;
+    height: 90%;
     justify-content: center;
+    align-items: center;
 }
 
-#calccontainer,#calcdesccontainer
+#calccontainer
 {
     display: flex;
     flex-direction: column;
     flex: 1;
-    height: 100%;
-    width: 60%;
+    height: 90%;
+    width: 70%;
     box-shadow: 5px 3px 5px rgba(0,0,0,0.1) inset, -3px -1px 5px white inset;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 #calclblcontainer
@@ -257,29 +258,26 @@ ul{
 #display
 {
     display: flex;
-    width: 80%;
-    height: 4vh;
+    width: 100%;
+    height: 5vh;
     padding: 0 10px;
     align-items: center;
     color: rgb(246,247,244);
+    font-size: 1rem;
 }
 
 #displayresult
 {
     display: flex;
     justify-content: flex-end;
-    width: 80%;
+    width:100%;
     height: 8vh;
     padding: 0 10px;
-    border-radius: 10px;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     color: rgb(246,247,244);
-    box-shadow: 5px 3px 5px rgba(0,0,0,0.1) inset, -3px -1px 5px white inset;
-    border:2px solid rgb(28,111,136);
+    box-shadow: 3px 1px 5px rgba(0,0,0,0.1), -3px -1px 3px rgb(78,121,156);
 }
-
-
 
 #calcrow1container,#calcrow2container,#calcrow3container,#calcrow4container,#calcrow5container
 {   
@@ -287,7 +285,7 @@ ul{
     flex-direction: row;
     flex: 1;
     width: 100%;
-    height: 20%;
+    height: 10%;
     justify-content: space-around;
     align-items: center;
 }
@@ -297,8 +295,8 @@ ul{
     display: flex;
     flex: 1;
     width: 100%;
-    height: 85%;
-    
+    height: 80%;
+    justify-content: space-evenly;
 }
 .rowbtn
 {
@@ -307,11 +305,11 @@ ul{
     align-items: center;
     height: 3vw;
     width: 3vw;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-shadow: 5px 3px 5px rgb(78,121,196);
     color: rgb(226,227,244);
     margin: 5px;
-    border-radius: 50%;
+    border-radius: 20%;
     background-color: rgb(28,111,136);
     box-shadow: 5px 3px 5px rgba(0,0,0,0.1), -3px -1px 5px white;
     list-style-type: none;
